@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <span id="intro">
+    <section id="intro">
         <section>
             <div id="hello" @mouseenter="startWave" @mouseleave="endWave">
                 <h1>Hello!</h1>
@@ -16,7 +16,19 @@
         <div id="profile-pic">
             <img src="@/assets/img/profile.jpg" alt="Profile picture">
         </div>
-    </span>
+    </section>
+    <section id="about">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem architecto iste numquam alias corrupti necessitatibus odit soluta, minima amet inventore repellat eligendi consectetur aperiam quasi nam iure aliquam eaque aspernatur ipsa culpa quaerat dignissimos? Consectetur temporibus recusandae reiciendis corrupti quae laborum cupiditate commodi, esse, fugiat quibusdam, omnis odit enim dolores sit voluptatum ipsum adipisci magnam perferendis non nesciunt dolorum eaque qui ad? At, iusto provident natus incidunt numquam ad nulla possimus eaque iure cumque temporibus asperiores placeat dolores vero sapiente molestiae, tempora voluptatum. Impedit, tenetur placeat. Qui incidunt culpa et perspiciatis, quibusdam fugiat eaque atque recusandae, veniam quisquam eius.</p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consequatur accusantium ut maxime ex assumenda odit deleniti, odio beatae corporis, facilis cum sed illum. Nostrum, doloribus provident. Quidem consectetur ut dicta itaque necessitatibus veniam veritatis reprehenderit voluptates ipsum nesciunt, cum perspiciatis ratione, nostrum doloribus exercitationem nam placeat eum facere! Reiciendis, odio! Harum ea voluptatum, facere minus error praesentium commodi mollitia! Iste pariatur dolores temporibus vel quos. Mollitia, velit maxime, nobis consectetur rerum aut aspernatur vel fugiat soluta doloremque iste nulla reiciendis delectus recusandae beatae excepturi, nemo eos veritatis facilis impedit eum quisquam perspiciatis? Neque voluptates dignissimos commodi dolores perferendis possimus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consequatur accusantium ut maxime ex assumenda odit deleniti, odio beatae corporis, facilis cum sed illum. Nostrum, doloribus provident. Quidem consectetur ut dicta itaque necessitatibus veniam veritatis reprehenderit voluptates ipsum nesciunt, cum perspiciatis ratione, nostrum doloribus exercitationem nam placeat eum facere! Reiciendis, odio! Harum ea voluptatum, facere minus error praesentium commodi mollitia! Iste pariatur dolores temporibus vel quos. Mollitia, velit maxime, nobis consectetur rerum aut aspernatur vel fugiat soluta doloremque iste nulla reiciendis delectus recusandae beatae excepturi, nemo eos veritatis facilis impedit eum quisquam perspiciatis? Neque voluptates dignissimos commodi dolores perferendis possimus.
+        </p>
+
+
+    </section>
   </div>
 </template>
 
@@ -45,15 +57,17 @@ export default {
 </script>
 
 <style>
-#home {
+#intro {
     background-image: url("../assets/img/terminal.gif");
     background-size: cover;
-}
-
-#intro {
+    scroll-snap-align: start;
     display: flex;
     justify-content: space-between;
     height: 100vh;
+}
+
+#about {
+    scroll-snap-align: start;
 }
 
 #intro section:first-of-type {
@@ -66,7 +80,6 @@ export default {
 
 #profile-pic img {
     border-radius: 20px;
-    /* box-shadow: 2px 5px rgba(0,0,0,0.2); */
 }
 
 #hello {
@@ -94,14 +107,12 @@ export default {
     height: 144px;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+#intro p {
     margin-left: 5vw;
     color: #ddd;
 }
 
-h1 {
+#intro h1 {
     color: #ddd;
 }
 </style>
