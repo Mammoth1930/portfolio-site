@@ -2,14 +2,16 @@
   <div id="home">
     <section id="intro">
         <section>
-            <div id="hello" @mouseenter="startWave" @mouseleave="endWave">
-                <h1>Hello!</h1>
-                <h1 id="wave-emoji" v-if="!wave">👋</h1>
-                <img id="wave-gif"
-                    src="@/assets/img/emoji-wave.gif"
-                    alt="Waving emoji"
-                    v-if="wave"
-                />
+            <div id="hello">
+                <h1>Hello World!</h1>
+                <div @mouseenter="startWave" @mouseleave="endWave">
+                    <h1 id="wave-emoji" v-if="!wave">👋</h1>
+                    <img id="wave-gif"
+                        src="@/assets/img/emoji-wave.gif"
+                        alt="Waving emoji"
+                        v-if="wave"
+                    />
+                </div>
             </div>
             <p>My name is Riley Farrell.<br/>I'm a Computer Scientist specialising in Data Science and Engineering.</p>
         </section>
@@ -18,14 +20,14 @@
         </div>
     </section>
     <section id="about">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dolorem architecto iste numquam alias corrupti necessitatibus odit soluta, minima amet inventore repellat eligendi consectetur aperiam quasi nam iure aliquam eaque aspernatur ipsa culpa quaerat dignissimos? Consectetur temporibus recusandae reiciendis corrupti quae laborum cupiditate commodi, esse, fugiat quibusdam, omnis odit enim dolores sit voluptatum ipsum adipisci magnam perferendis non nesciunt dolorum eaque qui ad? At, iusto provident natus incidunt numquam ad nulla possimus eaque iure cumque temporibus asperiores placeat dolores vero sapiente molestiae, tempora voluptatum. Impedit, tenetur placeat. Qui incidunt culpa et perspiciatis, quibusdam fugiat eaque atque recusandae, veniam quisquam eius.</p>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consequatur accusantium ut maxime ex assumenda odit deleniti, odio beatae corporis, facilis cum sed illum. Nostrum, doloribus provident. Quidem consectetur ut dicta itaque necessitatibus veniam veritatis reprehenderit voluptates ipsum nesciunt, cum perspiciatis ratione, nostrum doloribus exercitationem nam placeat eum facere! Reiciendis, odio! Harum ea voluptatum, facere minus error praesentium commodi mollitia! Iste pariatur dolores temporibus vel quos. Mollitia, velit maxime, nobis consectetur rerum aut aspernatur vel fugiat soluta doloremque iste nulla reiciendis delectus recusandae beatae excepturi, nemo eos veritatis facilis impedit eum quisquam perspiciatis? Neque voluptates dignissimos commodi dolores perferendis possimus.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consequatur accusantium ut maxime ex assumenda odit deleniti, odio beatae corporis, facilis cum sed illum. Nostrum, doloribus provident. Quidem consectetur ut dicta itaque necessitatibus veniam veritatis reprehenderit voluptates ipsum nesciunt, cum perspiciatis ratione, nostrum doloribus exercitationem nam placeat eum facere! Reiciendis, odio! Harum ea voluptatum, facere minus error praesentium commodi mollitia! Iste pariatur dolores temporibus vel quos. Mollitia, velit maxime, nobis consectetur rerum aut aspernatur vel fugiat soluta doloremque iste nulla reiciendis delectus recusandae beatae excepturi, nemo eos veritatis facilis impedit eum quisquam perspiciatis? Neque voluptates dignissimos commodi dolores perferendis possimus.
-        </p>
+        <NavBar/>
+        <article>
+            <h2>Overview</h2>
+            <p>
+                I’m a very hard-working, motivated and personable data professional, who recently graduated from one of Australia’s highest ranking universities, The University of Queensland, with a bachelor's degree in Computer Science. While completing this degree I fell in love with the theory and concepts of relational databases, artificial intelligence, and machine learning and as a result chose Data Science as the major for my degree. While studying I also chose to work casually at the university by helping to teach and develop content for a <a href="https://my.uq.edu.au/programs-courses/course.html?course_code=INFS1200&offer=53544c5543314558" target="_blank" rel="noopener noreferrer">first-year course</a> on relational databases and SQL. During my time at university, I was able to learn about and use many different data driven concepts and tools including:
+            </p>
+            
+        </article>
 
 
     </section>
@@ -33,11 +35,12 @@
 </template>
 
 <script>
+import NavBar from "@/components/NavBar.vue"
 
 export default {
   name: 'HomeView',
   components: {
-
+    NavBar
   },
   data() {
     return {
@@ -67,6 +70,7 @@ export default {
 }
 
 #about {
+    height: 100vh;
     scroll-snap-align: start;
 }
 
@@ -80,6 +84,7 @@ export default {
 
 #profile-pic img {
     border-radius: 20px;
+    /* box-shadow: 5px 10px #13A10E; */
 }
 
 #hello {
@@ -89,14 +94,7 @@ export default {
     margin: 10vh 0 0 5vw;
 }
 
-#hello h1 {
-    font-family: 'VT323', monospace;
-    font-size: 5em;
-    margin: 0;
-}
-
 #wave-emoji {
-    font-size: 144px;
     width: 144px;
     height: 144px;
 
@@ -114,5 +112,15 @@ export default {
 
 #intro h1 {
     color: #ddd;
+}
+
+article h2 {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+article p {
+    margin: 30px 100px 0px 100px;
+    font-size: 1.7em;
 }
 </style>
