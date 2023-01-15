@@ -1,14 +1,14 @@
 <template>
-    <nav>
+    <nav id="nav-bar">
         <ul id="nav-items">
             <li>
-                <RouterLink :to="{name: 'home'}">About</RouterLink>
+                <RouterLink :to="{name: 'home'}">Home</RouterLink>
+            </li>
+            <li>
+                <RouterLink :to="{name: 'about'}">About</RouterLink>
             </li>
             <li>
                 <RouterLink :to="{name: 'projects'}">Projects</RouterLink>
-            </li>
-            <li>
-                <RouterLink :to="{name: 'resume'}">Resume</RouterLink>
             </li>
             <li>
                 <RouterLink :to="{name: 'contact'}">Contact</RouterLink>
@@ -29,7 +29,10 @@ export default {
 
 <style scoped>
 nav {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
     background-color: var(--background-color-secondary);
 }
 

@@ -1,16 +1,6 @@
 <template>
     <router-view/>
-    <theme-button />
 </template>
-
-<script>
-import ThemeButton from "@/components/ThemeButton.vue"
-export default {
-    components: {
-        ThemeButton
-    }
-}
-</script>
 
 <style>
 html,
@@ -39,7 +29,7 @@ body {
     --text-primary-color: #ddd;
 }
 
-p {
+p{
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
 }
