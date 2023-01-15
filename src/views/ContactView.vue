@@ -1,16 +1,16 @@
 <template>
     <NavBar/>
-    <div class="about">
-      <h1>This is a Contacts page</h1>
-    </div>
+    <ThemeButton/>
   </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue"
+import ThemeButton from "@/components/ThemeButton.vue";
 
 export default {
     components: {
-        NavBar
+        NavBar,
+        ThemeButton
     }
 }
 </script>

@@ -1,5 +1,16 @@
 <template>
-    <div class="about">
-      <h1>This is a projects page</h1>
-    </div>
+    <NavBar/>
+    <ThemeButton/>
   </template>
+
+<script>
+import NavBar from "@/components/NavBar.vue"
+import ThemeButton from "@/components/ThemeButton.vue";
+
+export default {
+    components: {
+        NavBar,
+        ThemeButton
+    }
+}
+</script>

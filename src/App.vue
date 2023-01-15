@@ -18,6 +18,8 @@ body {
     --accent-color: #cacaca;
     --text-primary-color: #222;
     --element-size: 4rem;
+    --accent-bright: #164fd2;
+    
 }
 
 /* Define styles for the root window with dark - mode preference */
@@ -27,6 +29,7 @@ body {
     /* --background-color-secondary: #2d2d30; */
     --accent-color: #3f3f3f;
     --text-primary-color: #ddd;
+    --accent-bright: #76f843;
 }
 
 p{

@@ -44,7 +44,7 @@ li {
 
 li::before {
     font-size: 1em;
-    background: var(--accent-color);
+    background: var(--background-color-secondary);
     vertical-align: baseline;
     margin-inline-end: 1ch;
     padding-inline: 1ch;

@@ -26,6 +26,10 @@
 
                 <ProgrammingLanguage :languages="languageList"/>
             </p>
+            <h2>Technologies</h2>
+            <p>
+                Below are some of the main programming technologies I've used and am familiar with.
+            </p>
         </article>
     </section>
     <ThemeButton/>
@@ -86,10 +90,10 @@ export default {
                 {name: "SQL", rating: "five"},
                 {name: "MATLAB", rating: "three"},
                 {name: "R", rating: "one"},
-                {name: "Scala", rating: "two"},
-                {name: "JavaScript", rating: "three"},
-                {name: "PHP", rating: "two"},
-                {name: "HTML", rating: "four"},
+                {name: "Scala", rating: "one"},
+                {name: "JavaScript", rating: "two"},
+                {name: "PHP", rating: "three"},
+                {name: "HTML", rating: "five"},
                 {name: "CSS", rating: "four"},
                 {name: "Shell", rating: "four"}
             ]
@@ -103,6 +107,11 @@ export default {
     margin-top: 150px
 }
 
+article {
+    max-width: 1500px;
+    margin: auto;
+}
+
 article h2 {
     margin-left: 100px;
     margin-top: 30px;
@@ -111,5 +120,13 @@ article h2 {
 article p {
     margin: 30px 100px 0px 100px;
     font-size: 1.7em;
+}
+
+article a {
+    color: var(--text-primary-color)
+}
+
+article a:hover {
+    color: var(--accent-bright);
 }
 </style>

@@ -44,9 +44,20 @@ a {
     color: var(--text-primary-color);
 }
 
-a:hover, .router-link-exact-active {
+.router-link-exact-active {
     text-decoration: underline;
-    color: var(--accent-color);
+    color: var(--accent-bright);
+}
+
+a::before, a::after{
+    content: ">";
+    color: rgba(0,0,0,0);
+    display: inline-block;
+}
+
+a:hover::before {
+    content: ">";
+    color: var(--accent-bright);
 }
 
 #nav-items{

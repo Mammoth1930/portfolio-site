@@ -3,7 +3,6 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import ContactView from '@/views/ContactView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
-import ResumeView from '@/views/ResumeView.vue'
 
 const routes = [
   {
@@ -25,12 +24,7 @@ const routes = [
     path: '/projects',
     name: 'projects',
     component: ProjectsView
-  },
-  {
-    path: '/resume',
-    name: 'resume',
-    component: ResumeView
-  },
+  }
 ]
 
 const router = createRouter({
