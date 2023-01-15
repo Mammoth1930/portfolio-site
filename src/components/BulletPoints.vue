@@ -14,4 +14,15 @@ export default {
 ul {
     columns: 2;
 }
+
+li {
+    list-style-type: "🎓";
+    padding-inline-start: 1ch;
+    padding-bottom: 20px;
+    margin-right: 50px;
+}
+
+li::marker {
+    font-size: 1em;
+}
 </style>
