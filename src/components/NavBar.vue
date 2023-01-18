@@ -2,16 +2,16 @@
     <nav id="nav-bar">
         <ul id="nav-items">
             <li>
-                <RouterLink :to="{name: 'home'}">Home</RouterLink>
+                <RouterLink :to="{name: 'Home'}">Home</RouterLink>
             </li>
             <li>
-                <RouterLink :to="{name: 'about'}">About</RouterLink>
+                <RouterLink :to="{name: 'About'}">About</RouterLink>
             </li>
             <li>
-                <RouterLink :to="{name: 'projects'}">Projects</RouterLink>
+                <RouterLink :to="{name: 'Projects'}">Projects</RouterLink>
             </li>
             <li>
-                <RouterLink :to="{name: 'contact'}">Contact</RouterLink>
+                <RouterLink :to="{name: 'Contact'}">Contact</RouterLink>
             </li>
         </ul>
     </nav>

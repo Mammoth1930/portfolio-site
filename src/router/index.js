@@ -7,22 +7,22 @@ import ProjectsView from '@/views/ProjectsView.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: HomeView
   },
   {
     path: '/about',
-    name: 'about',
+    name: 'About',
     component: AboutView
   },
   {
     path: '/contact',
-    name: 'contact',
+    name: 'Contact',
     component: ContactView
   },
   {
     path: '/projects',
-    name: 'projects',
+    name: 'Projects',
     component: ProjectsView
   }
 ]
@@ -30,6 +30,11 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+    document.title = 'Riley Farrell - ' + to.name
+    next()
 })
 
 export default router
