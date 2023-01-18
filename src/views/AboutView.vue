@@ -30,6 +30,7 @@
             <p>
                 Below are some of the main programming technologies I've used and am familiar with.
             </p>
+            <Gallery :imgs="techPics"/>
         </article>
     </section>
     <ThemeButton/>
@@ -40,6 +41,7 @@ import NavBar from "@/components/NavBar.vue"
 import BulletPoints from "@/components/BulletPoints.vue"
 import ThemeButton from "@/components/ThemeButton.vue"
 import ProgrammingLanguage from "@/components/ProgrammingLanguage.vue"
+import Gallery from "@/components/Gallery.vue"
 
 export default {
     name: "AboutView",
@@ -47,10 +49,17 @@ export default {
         NavBar,
         BulletPoints,
         ThemeButton,
-        ProgrammingLanguage
+        ProgrammingLanguage,
+        Gallery
+    },
+    methods: {
+        getImgUrl(pic) {
+            return require('../assets/img/technologies/'+pic)
+        }
     },
     data() {
         return {
+            test: "ADF.png",
             dataScienceConcepts: [
                 'Artificial Intelligence',
                 'Machine Learning and Data Mining',
@@ -96,6 +105,36 @@ export default {
                 {name: "HTML", rating: "five"},
                 {name: "CSS", rating: "four"},
                 {name: "Shell", rating: "four"}
+            ],
+            techPics: [
+                {name: "ADF.png", alt: "Azure Data Factory"},
+                {name: "azure.png", alt: "Microsoft Azure"},
+                {name: "bootstrap.png", alt: "Bootstrap"},
+                {name: "confluence.png", alt: "Confluence"},
+                {name: "databricks.png", alt: "Databricks"},
+                {name: "devops.png", alt: "Azure Devops"},
+                {name: "flutter.png", alt: "Flutter"},
+                {name: "gcp.png", alt: "Google Cloud Platform"},
+                {name: "github.png", alt: "GitHub"},
+                {name: "hadoop.png", alt: "Hadoop"},
+                {name: "intellij.png", alt: "IntelliJ"},
+                {name: "jira.png", alt: "Jira"},
+                {name: "jQuery.png", alt: "jQuery"},
+                {name: "linux.png", alt: "Linux"},
+                {name: "matplotlib.png", alt: "Matplotlib"},
+                {name: "mySQL.png", alt: "MySQL"},
+                {name: "numpy.png", alt: "NumPy"},
+                {name: "oracle.png", alt: "Oracle"},
+                {name: "pandas.png", alt: "Pandas"},
+                {name: "powerBI.png", alt: "Microsoft PowerBI"},
+                {name: "pytorch.png", alt: "PyTorch"},
+                {name: "scikitLearn.png", alt: "ScikitLearn"},
+                {name: "spark.png", alt: "Apache Spark"},
+                {name: "SQLite.png", alt: "SQLite"},
+                {name: "sqlServer.png", alt: "Microsoft SqlServer"},
+                {name: "vscode.png", alt: "Visual Studio Code"},
+                {name: "vue.png", alt: "Vue"},
+                {name: "jupyter.png", alt: "Jupyter Notebooks"}
             ]
         }
     }
