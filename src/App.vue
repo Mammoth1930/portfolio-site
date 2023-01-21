@@ -32,7 +32,7 @@ body {
     --accent-bright: #76f843;
 }
 
-p{
+p, a{
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
 }

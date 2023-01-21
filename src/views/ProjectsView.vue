@@ -6,6 +6,9 @@
             <p>
                 This portfolio site was designed and coded completely from scratch by me! The site demonstrates much of what I have learned in university about the principles of design and user experience. It also shows off some of my skills in web development languages such as HTML, CSS and JavaScript. This site was built using Vue.js a JavaScript framework I’d never used before undertaking this project.
             </p>
+            <div class="button-container">
+                <Button class="btn" link="https://github.com/Mammoth1930/portfolio-site" text="View"/>
+            </div>
             <h2>Virality</h2>
             <p>
                 Virality was my capstone project at university and was developed with the assistance of five other UQ computer science students in the final semester of their degree. Virality is a mobile game designed to educate users about the spread of infectious diseases.
@@ -26,6 +29,11 @@
                 The code for the application and backend is available to view on GitHub, however, unfortunately, UQ is no longer hosting our web server so the application will not work.
             </p>
             <Carousel/>
+            <div class="button-container">
+                <Button class="btn" link="https://github.com/Mammoth1930/Virality-App" text="View App"/>
+                <Button class="btn" link="https://github.com/Mammoth1930/Virality-Server" text="View Server"/>
+            </div>
+            <h2>So much more to come!</h2>
         </article>
     </section>
     <ThemeButton/>
@@ -35,17 +43,31 @@
 import NavBar from "@/components/NavBar.vue"
 import ThemeButton from "@/components/ThemeButton.vue";
 import Carousel from "@/components/Carousel.vue"
+import Button from "@/components/Button.vue"
 
 export default {
     name: "ProjectsView",
     components: {
         NavBar,
         ThemeButton,
-        Carousel
+        Carousel,
+        Button
     }
 }
 </script>
 
 <style>
+.button-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px 100px 0px 100px;
+}
 
+.btn+.btn {
+    margin-right: 50px !important;
+}
+
+#projects {
+    margin-bottom: 100px;
+}
 </style>

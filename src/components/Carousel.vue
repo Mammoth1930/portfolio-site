@@ -74,11 +74,11 @@ import { defineComponent } from 'vue'
 
 <style>
 #carousel-main {
-    margin-top: 5ch;
+    margin: 30px 100px 0px 100px;
 }
 
 #thumbnails {
-    margin: 0;
+    margin: 0px 100px 0px 100px;
 }
 
 .carousel-thumb {

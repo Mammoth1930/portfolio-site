@@ -34,6 +34,7 @@ nav {
     width: 100%;
     height: 75px;
     background-color: var(--background-color-secondary);
+    z-index: 1000;
 }
 
 a {
