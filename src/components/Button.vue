@@ -29,6 +29,7 @@ a {
 
 a:hover {
     background-color: var(--accent-bright);
+    text-decoration: none;
     color: #222;
 }
 </style>

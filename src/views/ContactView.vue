@@ -1,5 +1,10 @@
 <template>
     <NavBar/>
+    <section id="contact">
+        <article>
+            <h2>Reach out!</h2>
+        </article>
+    </section>
     <ThemeButton/>
   </template>
 

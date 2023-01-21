@@ -18,7 +18,7 @@ body {
     --accent-color: #cacaca;
     --text-primary-color: #222;
     --element-size: 4rem;
-    --accent-bright: #164fd2;
+    --accent-bright: #5a24a7;
     
 }
 
