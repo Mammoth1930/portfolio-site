@@ -142,7 +142,7 @@ export default {
 </script>
 
 <style>
-#about {
+section {
     margin-top: 150px
 }
 
