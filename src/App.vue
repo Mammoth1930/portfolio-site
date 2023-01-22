@@ -13,9 +13,9 @@ body {
 }
 /* Define styles for the default root window element */
 :root {
-    --background-color-primary: #ebebeb;
-    --background-color-secondary: #fafafa;
-    --accent-color: #cacaca;
+    --background-color-primary: #cacaca;
+    --background-color-secondary: #ebebeb;
+    --accent-color: #fafafa;
     --text-primary-color: #222;
     --element-size: 4rem;
     --accent-bright: #5a24a7;
