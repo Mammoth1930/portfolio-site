@@ -73,12 +73,8 @@ import { defineComponent } from 'vue'
   </script>
 
 <style>
-#carousel-main {
+#carousel-main, #thumbnails {
     margin: 30px 100px 0px 100px;
-}
-
-#thumbnails {
-    margin: 0px 100px 0px 100px;
 }
 
 .carousel-thumb {
@@ -93,7 +89,7 @@ import { defineComponent } from 'vue'
 }
 
 .carousel__item {
-  min-height: 200px;
+  min-height: 150px;
   width: 100%;
   background-color: transparent;
   color: var(--vc-clr-white);
@@ -120,6 +116,26 @@ import { defineComponent } from 'vue'
   box-sizing: content-box;
   color: var(--accent-bright);
   /* border: 5px solid var(--text-primary-color); */
+}
+
+/* Laptop size */
+@media screen and (max-width: 1200px) {
+    .carousel-img {
+        max-height: 400px;
+    }
+
+    .carousel-thumb {
+        max-height: 50px;
+    }
+
+    .carousel__item {
+        min-height: 50px;
+    }
+}
+
+/* Tablet size */
+@media screen and (max-width: 800px) {
+
 }
 </style>
   

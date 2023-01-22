@@ -42,8 +42,9 @@ article h3 {
 
 .social-btn {
     display: flex;
+    align-items: center;
     font-size: 1.5em;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: var(--accent-color);
     border-radius: 1ch;
     color: var(--text-primary-color);
@@ -58,6 +59,29 @@ article h3 {
 
 .social-btn img {
     width: 30px;
-    margin-right: 10px;
+    margin-right: 15px;
+}
+
+/* Laptop size */
+@media screen and (max-width: 1200px) {
+    article p, .social-container, #carousel-main, #thumbnails {
+        margin: 30px 50px 0px 50px;
+    }
+
+    article h3, article h2 {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .social-btn {
+        font-size: 1em;
+    }
+}
+
+/* Tablet size */
+@media screen and (max-width: 800px) {
+    #contact {
+        background-color: blueviolet;
+    }
 }
 </style>
