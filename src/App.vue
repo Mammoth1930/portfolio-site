@@ -1,5 +1,6 @@
 <template>
-    <NavBar id="NavBar"/>
+    <NavBar id="nav-bar"/>
+    <NavMenu id="nav-menu"/>
     <router-view/>
     <ThemeButton/>
 </template>
@@ -7,11 +8,13 @@
 <script>
 import NavBar from "@/components/NavBar.vue"
 import ThemeButton from "@/components/ThemeButton.vue"
+import NavMenu from "@/components/NavMenu.vue"
 
 export default {
     components: {
         NavBar,
-        ThemeButton
+        ThemeButton,
+        NavMenu
     }
 }
 </script>
@@ -92,7 +95,7 @@ h4 {
 
 /* Mobile size */
 @media screen and (max-width: 480px) {
-    #NavBar {
+    #nav-bar {
         display: none;
     }
 }
