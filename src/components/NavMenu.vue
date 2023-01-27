@@ -56,7 +56,7 @@ nav {
     background: var(--background-color-secondary);
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 99;
     /* box-shadow: 2px 0 3px$grey-6; */
     /* overflow-y: scroll; */
@@ -70,7 +70,7 @@ nav {
     border: none;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     appearance: none;
     cursor: pointer;
@@ -92,24 +92,24 @@ nav {
 }
 
 .side-menu-btn span.top {
-    transform: translateY(-8px);
-}
-
-.side-menu-btn span.bottom {
     transform: translateY(8px);
 }
 
+.side-menu-btn span.bottom {
+    transform: translateY(-8px);
+}
+
 .side-menu-btn.active .top {
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
 }
 
 .side-menu-btn.active .mid {
-    transform: translateX(-20px) rotate(360deg);
+    transform: translateX(20px) rotate(360deg);
     opacity: 0;
 }
 
 .side-menu-btn.active .bottom {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 .side-menu-wrapper {
@@ -139,17 +139,17 @@ nav {
 }
 
 .translateX-enter{
-	transform:translateX(-200px);
+	transform:translateX(200px);
 	opacity: 0;
 }
 
 .translateX-enter-active,.translateX-leave-active{
-	transform-origin: top left 0;
+	transform-origin: top right 0;
 	transition:.2s ease;
 }
 
 .translateX-leave-to{
-	transform: translateX(-200px);
+	transform: translateX(200px);
 	opacity: 0;
 }
 </style>
