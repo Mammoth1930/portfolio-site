@@ -1,6 +1,5 @@
 <template>
     <div id="home">
-        <NavBar/>
         <section id="intro">
             <section>
                 <div id="hello">
@@ -14,26 +13,18 @@
                         />
                     </div>
                 </div>
-                <p>My name is Riley Farrell.<br/>I'm a Computer Scientist specialising in Data Science and Engineering.</p>
+                <p id="byline">My name is Riley Farrell.<br/>I'm a Computer Scientist specialising in Data Science and Engineering.</p>
             </section>
             <div id="profile-pic">
                 <img src="@/assets/img/profile.jpg" alt="Profile picture">
             </div>
         </section>
-        <ThemeButton/>
     </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue"
-import ThemeButton from "@/components/ThemeButton.vue"
-
 export default {
   name: 'HomeView',
-  components: {
-    NavBar,
-    ThemeButton
-  },
   data() {
     return {
         wave: false
@@ -81,20 +72,22 @@ export default {
 
 #hello {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 10vh 0 0 5vw;
 }
 
 #wave-emoji {
     width: 144px;
     height: 144px;
+    text-align: center;
 
 }
 
 #wave-gif {
     width: 144px;
-    height: 144px;
+    height: 140px;
 }
 
 #intro p {
@@ -104,5 +97,29 @@ export default {
 
 #intro h1 {
     color: #ddd;
+}
+
+/* Laptop size */
+@media screen and (max-width: 1200px) {
+    #profile-pic {
+        width: 80vw;
+    }
+
+    #profile-pic img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/* Tablet size */
+@media screen and (max-width: 800px) {
+    
+}
+
+/* Mobile size */
+@media screen and (max-width: 480px) {
+    NavBar {
+        display: none;
+    }
 }
 </style>

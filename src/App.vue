@@ -1,6 +1,20 @@
 <template>
+    <NavBar id="NavBar"/>
     <router-view/>
+    <ThemeButton/>
 </template>
+
+<script>
+import NavBar from "@/components/NavBar.vue"
+import ThemeButton from "@/components/ThemeButton.vue"
+
+export default {
+    components: {
+        NavBar,
+        ThemeButton
+    }
+}
+</script>
 
 <style>
 html,
@@ -74,5 +88,12 @@ h4 {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     background-color: var(--background-color-secondary);
+}
+
+/* Mobile size */
+@media screen and (max-width: 480px) {
+    #NavBar {
+        display: none;
+    }
 }
 </style>

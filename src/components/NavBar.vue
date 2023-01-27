@@ -29,6 +29,8 @@ export default {
 
 <style scoped>
 nav {
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
     width: 100%;
@@ -63,9 +65,23 @@ a:hover::before {
 
 #nav-items{
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+/* Laptop size */
+@media screen and (max-width: 1200px) {
+    a {
+        font-size: 3em;
+    }
+}
+
+/* Tablet size */
+@media screen and (max-width: 800px) {
+
 }
 </style>

@@ -1,5 +1,4 @@
 <template>
-    <NavBar/>
     <section id="projects">
         <article>
             <h2>This Website</h2>
@@ -36,20 +35,15 @@
             <h2>So much more to come!</h2>
         </article>
     </section>
-    <ThemeButton/>
   </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue"
-import ThemeButton from "@/components/ThemeButton.vue";
 import Carousel from "@/components/Carousel.vue"
 import Button from "@/components/Button.vue"
 
 export default {
     name: "ProjectsView",
     components: {
-        NavBar,
-        ThemeButton,
         Carousel,
         Button
     }

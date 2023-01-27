@@ -1,5 +1,4 @@
 <template>
-    <NavBar/>
     <section id="about">
         <article>
             <h2>Overview</h2>
@@ -33,22 +32,17 @@
             <Gallery :imgs="techPics"/>
         </article>
     </section>
-    <ThemeButton/>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue"
 import BulletPoints from "@/components/BulletPoints.vue"
-import ThemeButton from "@/components/ThemeButton.vue"
 import ProgrammingLanguage from "@/components/ProgrammingLanguage.vue"
 import Gallery from "@/components/Gallery.vue"
 
 export default {
     name: "AboutView",
     components: {
-        NavBar,
         BulletPoints,
-        ThemeButton,
         ProgrammingLanguage,
         Gallery
     },

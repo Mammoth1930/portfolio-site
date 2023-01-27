@@ -1,5 +1,4 @@
 <template>
-    <NavBar/>
     <section id="contact">
         <article>
             <h3>Want to see more?</h3>
@@ -11,20 +10,7 @@
             </div> 
         </article>
     </section>
-    <ThemeButton/>
   </template>
-
-<script>
-import NavBar from "@/components/NavBar.vue"
-import ThemeButton from "@/components/ThemeButton.vue";
-
-export default {
-    components: {
-        NavBar,
-        ThemeButton
-    }
-}
-</script>
 
 <style>
 article h3 {
