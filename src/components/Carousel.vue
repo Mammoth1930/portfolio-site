@@ -134,8 +134,14 @@ import { defineComponent } from 'vue'
 }
 
 /* Tablet size */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 740px) {
+    #thumbnails {
+        display: none;
+    }
 
+    #carousel-main {
+        margin: 30px 20px 0px 20px;
+    }
 }
 </style>
   

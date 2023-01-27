@@ -65,9 +65,15 @@ article h3 {
 }
 
 /* Tablet size */
-@media screen and (max-width: 800px) {
-    #contact {
-        background-color: blueviolet;
+@media screen and (max-width: 740px) {
+    .social-container {
+        flex-direction: column;
+        padding-bottom: 0px;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .social-btn {
+        margin-bottom: 25px;
     }
 }
 </style>

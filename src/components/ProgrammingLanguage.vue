@@ -50,4 +50,11 @@ li::before {
     padding-inline: 1ch;
     border-radius: 1ch;
 }
+
+/* Tablet size */
+@media screen and (max-width: 740px) {
+    ul {
+        columns: 1;
+    }
+}
 </style>

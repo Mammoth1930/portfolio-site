@@ -164,4 +164,11 @@ article a {
 article a:hover {
     text-decoration: underline;
 }
+
+/* Tablet size */
+@media screen and (max-width: 740px) {
+    section {
+        margin-top: 50px;
+    }
+}
 </style>

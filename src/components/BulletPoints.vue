@@ -25,4 +25,11 @@ li {
 li::marker {
     font-size: 1em;
 }
+
+/* Tablet size */
+@media screen and (max-width: 740px) {
+    ul {
+        columns: 1;
+    }
+}
 </style>

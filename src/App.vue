@@ -94,7 +94,7 @@ h4 {
 }
 
 /* Mobile size */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 740px) {
     #nav-bar {
         display: none;
     }

@@ -48,5 +48,10 @@ img {
     max-width: 150px;
 }
 
-
+/* Tablet size */
+@media screen and (max-width: 740px) {
+    #gallery {
+        margin: 50px;
+    }
+}
 </style>
