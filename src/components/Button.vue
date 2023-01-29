@@ -32,4 +32,10 @@ a:hover {
     text-decoration: none;
     color: #222;
 }
+
+@media screen and (max-width: 420px) {
+    a {
+        font-size: 1.5em;
+    }
+}
 </style>

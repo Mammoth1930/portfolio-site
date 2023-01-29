@@ -99,4 +99,31 @@ h4 {
         display: none;
     }
 }
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    article p {
+        margin: 20px 15px 0px 15px !important;
+        font-size: 1.3em !important;
+    }
+
+    article h2, article h3 {
+        margin-left: 15px !important;
+    }
+}
 </style>

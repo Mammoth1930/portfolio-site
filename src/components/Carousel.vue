@@ -140,7 +140,7 @@ import { defineComponent } from 'vue'
     }
 
     #carousel-main {
-        margin: 30px 20px 0px 20px;
+        margin: 30px 15px 0px 15px;
     }
 }
 </style>
