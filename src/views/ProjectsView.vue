@@ -65,8 +65,9 @@ export default {
     margin-bottom: 100px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .button-container {
+        margin: 20px 15px 0px 15px;
         flex-direction: column;
         justify-content: center;
     }

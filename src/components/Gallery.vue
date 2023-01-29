@@ -46,12 +46,31 @@ export default {
 
 img {
     max-width: 150px;
+    max-height: 150px;
 }
 
 /* Tablet size */
 @media screen and (max-width: 740px) {
     #gallery {
         margin: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #gallery {
+        margin: 50px 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .col {
+        width: 60px;
+        height: 60px;
+    }
+
+    img {
+        max-width: 60px;
+        max-height: 60px;
     }
 }
 </style>

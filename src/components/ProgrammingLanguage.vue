@@ -57,4 +57,10 @@ li::before {
         columns: 1;
     }
 }
+
+@media screen and (max-width: 420px) {
+    ul {
+        padding: 0px;
+    }
+}
 </style>
