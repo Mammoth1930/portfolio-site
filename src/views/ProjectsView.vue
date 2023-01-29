@@ -58,10 +58,21 @@ export default {
 }
 
 .btn+.btn {
-    margin-right: 50px !important;
+    margin-right: 50px;
 }
 
 #projects {
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    .button-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn+.btn {
+        margin: 0px;
+    }
 }
 </style>
