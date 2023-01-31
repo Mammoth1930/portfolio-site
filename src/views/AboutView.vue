@@ -13,8 +13,6 @@
 
                 Coming into my final year of study I also completed a twelve-week internship at the Bank Of Queensland, where I was able to put much of the theory taught in my degree to practical use; working on several projects and utilizing several industry standard tools including: Azure Data Factory, Microsoft Power BI, Microsoft SQL Server and Azure Blob Storage.<br/><br/>
 
-                <!-- <BulletPoints :points="internshipTechnologies" id="internshipTechnologies"/> -->
-
                 Immediately after graduating, I returned to BOQ and began my current role as an Associate Data Operations Engineer, where I work 50% on projects and 50% of data operations support and maintenance. In this role I have gained proficiency in using:
 
                 <BulletPoints :points="graduateJobTechnologies" id="graduateJobTechnologies"/>
@@ -22,6 +20,13 @@
             <h2>Programming Languages</h2>
             <p>
                 Below is a list of programming languages I have experience using. Each language also has a rating of how comfortable I am using the language.
+
+                <Expand>
+                    <template v-slot:title>
+                        <p>What do the stars mean?</p>
+                    </template>
+                    <p>They mean your pretty epic my dude!</p>
+                </Expand>
 
                 <ProgrammingLanguage :languages="languageList"/>
             </p>
@@ -38,13 +43,15 @@
 import BulletPoints from "@/components/BulletPoints.vue"
 import ProgrammingLanguage from "@/components/ProgrammingLanguage.vue"
 import Gallery from "@/components/Gallery.vue"
+import Expand from "@/components/Expand.vue"
 
 export default {
     name: "AboutView",
     components: {
         BulletPoints,
         ProgrammingLanguage,
-        Gallery
+        Gallery,
+        Expand
     },
     methods: {
         getImgUrl(pic) {
@@ -71,12 +78,6 @@ export default {
                 'Low-level C, Assembly and Computer Architecture',
                 'Quantum Computing',
                 'Program Design and Version Control'
-            ],
-            internshipTechnologies: [
-                'Azure Data Factory',
-                'Microsoft Power BI',
-                'Microsoft SQL Server',
-                'Azure Blob Storage'
             ],
             graduateJobTechnologies: [
                 'Azure Data Factory',
