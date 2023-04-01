@@ -1,19 +1,5 @@
 # portfolio-site
 
-## Project setup
-```
-npm install
-```
+A portfolio site I designed and developed myself to display on my LinkedIn as a showcase of my skills and knowledge in programming and computer science.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+If you'd like to see the current live implementation of the site please visit https://rileyf.com.
